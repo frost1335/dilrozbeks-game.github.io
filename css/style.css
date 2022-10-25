@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow: hidden;
     width: 5500px;
     height: 5500px;
     font-family: 'Bebas Neue', cursive;
