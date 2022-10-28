@@ -1,375 +1,411 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 body {
-    overflow: hidden;
-    width: 5500px;
-    height: 5500px;
-    font-family: 'Bebas Neue', cursive;
-    background: url(../img/8ebb7d6690d400f07549df0f7de35047.jpg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 5500px;
+  height: 5500px;
+  font-family: "Bebas Neue", cursive;
+  background: url(../img/8ebb7d6690d400f07549df0f7de35047.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.body{
-    width: 4500px;
-    height: 4500px;
+.body {
+  width: 4500px;
+  height: 4500px;
 }
 
-.check_box1{
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    top: 5000px;
-    left: 500px;
+.check_box1 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 5000px;
+  left: 500px;
 }
 
-.check_box2{
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    left: 5000px;
-    top: 500px;
+.check_box2 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  left: 5000px;
+  top: 500px;
 }
 
 .block {
-    width: 100px;
-    height: 50px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    color: orange;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%);
-    filter: drop-shadow(0 0 10px orange);
+  width: 100px;
+  height: 50px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: orange;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 10px orange);
 }
 
 .box_cont {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cont {
-    width: 1px;
-    height: 1px;
-    background: transparent;
+  width: 1px;
+  height: 1px;
+  background: transparent;
 }
 
 button {
-    width: 120px;
-    height: 50px;
-    background: yellow;
-    position: absolute;
-    border: none;
-    margin-left: 40px;
-    margin-right: 40px;
-    bottom: 100px;
+  width: 120px;
+  height: 50px;
+  background: yellow;
+  position: absolute;
+  border: none;
+  margin-left: 40px;
+  margin-right: 40px;
+  bottom: 100px;
 }
 
 .left {
-    left: 40%;
-    transform: translateX(-45%);
+  left: 40%;
+  transform: translateX(-45%);
 }
 
 .right {
-    right: 40%;
-    transform: translateX(45%);
+  right: 40%;
+  transform: translateX(45%);
 }
 
 .right:focus,
 .left:focus {
-    outline: red 1px solid;
+  outline: red 1px solid;
 }
 
 .stone_blocks {
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 200px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 200px;
 }
 
 .box_stone {
-    background: transparent;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
 .box_count {
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  flex-direction: column;
 }
 
 .box_count_stone {
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
 }
 
 .block_img {
-    width: 90%;
-    height: 115%;
-    transform: rotate(180deg);
-    margin-top: -5px;
-    margin-bottom: -5px;
+  width: 90%;
+  height: 115%;
+  transform: rotate(180deg);
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 
 .box_block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .count {
-    background: transparent;
-    height: auto;
-    height: 1px;
-    width: 1px;
+  background: transparent;
+  height: auto;
+  height: 1px;
+  width: 1px;
 }
 
 .box {
-    width: 98%;
-    height: 98%;
-    background: transparent;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: rotate(0deg) translate(-50%, 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 98%;
+  height: 98%;
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: rotate(0deg) translate(-50%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bot_block {
-    width: 56px;
-    height: 56px;
-    background: transparent;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bot_cam {
-    width: 104px;
-    height: 104px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  width: 104px;
+  height: 104px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .stone_img {
-    width: 200%;
-    height: 200%;
+  width: 200%;
+  height: 200%;
 }
 
 .cam_box {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .Bot_box {
-    width: 90px;
-    height: 45px;
-    background-color: transparent;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin-top: -5px;
+  width: 90px;
+  height: 45px;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: -5px;
     margin-bottom: 5px; */
 }
 
 .blue {
-    display: block;
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    filter: drop-shadow(0 0 10px blue);
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  filter: drop-shadow(0 0 10px blue);
 }
 
 .red {
-    display: block;
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    filter: drop-shadow(0 0 10px red);
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  filter: drop-shadow(0 0 10px red);
 }
 
 .bot_img {
-    width: 110%;
-    height: 130%;
-    transform: rotate(180deg);
+  width: 110%;
+  height: 130%;
+  transform: rotate(180deg);
 }
 
 .cont_box_l {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .selec_bot {
-    width: 58px;
-    height: 58px;
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
-    position: absolute;
-    padding-top: 3px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  position: absolute;
+  padding-top: 3px;
 }
 
 .main_box {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .buttons {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background: green;
-    opacity: 0.3;
-    top: 100px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: green;
+  opacity: 0.3;
+  top: 100px;
 }
 
 .right {
-    position: fixed;
-    width: 50%;
-    height: 100%;
-    background: red;
-    left: -23%;
-    opacity: 0;
-    top: 0;
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  background: red;
+  left: -23%;
+  opacity: 0;
+  top: 0;
 }
 
 .left {
-    position: fixed;
-    width: 51%;
-    height: 100%;
-    background: yellow;
-    left: 72.4%;
-    opacity: 0;
-    top: 0;
+  position: fixed;
+  width: 51%;
+  height: 100%;
+  background: yellow;
+  left: 72.4%;
+  opacity: 0;
+  top: 0;
 }
 
 .position {
-    position: fixed;
-    width: 1px;
-    height: 1px;
-    background: black;
-    left: 100%;
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  background: black;
+  left: 100%;
 }
 
 .position_2 {
-    position: fixed;
-    width: 1px;
-    height: 1px;
-    background: black;
-    top: 100%;
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  background: black;
+  top: 100%;
 }
 
 .position_3 {
-    position: fixed;
-    width: 1px;
-    height: 1px;
-    background: black;
-    right: 100%;
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  background: black;
+  right: 100%;
 }
 
 .position_4 {
-    position: fixed;
-    width: 1px;
-    height: 1px;
-    background: black;
-    left: 100%;
-    top: 100%
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  background: black;
+  left: 100%;
+  top: 100%;
 }
 
 .overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .6);
-    display: flex;
-    justify-content: center;
-    transition: 2s;
-    align-items: center;
-    display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  transition: 2s;
+  align-items: center;
+  display: none;
+  z-index: 100;
 }
 
 .overlay .menu {
-    width: 40%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
 }
 
 .overlay .menu h1 {
-    color: white;
-    font-style: italic;
-    font-size: 200px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 20px;
-    font-weight: 900;
-    line-height: 200px;
-    margin: 0;
-    padding: 0;
+  color: white;
+  font-style: italic;
+  font-size: 200px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 20px;
+  font-weight: 900;
+  line-height: 200px;
+  margin: 0;
+  padding: 0;
 }
 
 ::selection {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 .overlay .menu .score {
-    color: white;
-    font-size: 150px;
-    font-style: italic;
-    letter-spacing: 5px;
-    font-weight: 900;
-    margin: 0;
-    padding: 0;
+  color: white;
+  font-size: 150px;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
 }
 
 .overlay .menu .stars {
-    color: grey;
-    font-size: 150px;
-    font-style: italic;
-    letter-spacing: 5px;
-    font-weight: 900;
-    margin: 0;
-    padding: 0;
+  color: grey;
+  font-size: 150px;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
 }
 
 .overlay .menu .restart {
-    color: grey;
-    font-size: 100px;
-    text-decoration: none;
-    opacity: .8;
-    transition: .5s;
+  color: grey;
+  font-size: 100px;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 .overlay .menu .restart:hover {
-    color: white;
-    opacity: .7;
+  color: white;
+  opacity: 0.7;
+}
+
+.left__button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 50%;
+  z-index: 90;
+}
+
+.right__button {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  z-index: 90;
+}
+
+.boost__button {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 80%;
+  z-index: 95;
+  width: 200px;
+  height: 50px;
+  background: #2146c7;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
