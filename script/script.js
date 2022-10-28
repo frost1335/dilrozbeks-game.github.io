@@ -9,7 +9,6 @@ $(document).ready(function () {
   let $stars = document.querySelectorAll(".star");
   let $leftButton = document.querySelectorAll(".left__button");
   let $rightButton = document.querySelectorAll(".right__button");
-  let $speedButton = document.querySelectorAll(".boost__button");
 
   $(".box_stone_l").each(function () {
     for (let Si = 0; Si <= $stone.length; Si++) {
@@ -110,7 +109,6 @@ $(document).ready(function () {
     let iKey = 0;
     let lKey = 0;
     function KeyDown(e) {
-      console.log("asdsad");
       if (e.key === "Right" || e.key === "ArrowRight") {
         if (iKey == 0) {
           $z.RotateInt();
@@ -164,15 +162,12 @@ $(document).ready(function () {
     $left.on("mouseout", function () {
       $z.RotateClearL();
     });
-    console.log($leftButton);
-    $speedButton[0].addEventListener("mousedown", () => KeyDown({ key: "Up" }));
     $leftButton[0].addEventListener("mousedown", () =>
       KeyDown({ key: "Left" })
     );
     $rightButton[0].addEventListener("mousedown", () =>
       KeyDown({ key: "Right" })
     );
-    $speedButton[0].addEventListener("mouseup", () => KeyUp({ key: "Up" }));
     $leftButton[0].addEventListener("mouseup", () => KeyUp({ key: "Left" }));
     $rightButton[0].addEventListener("mouseup", () => KeyUp({ key: "Right" }));
     document.addEventListener("keydown", KeyDown);
@@ -322,22 +317,22 @@ $(document).ready(function () {
   new BotMove(
     $(".bot_block1"),
     $(".Bot_box1"),
-    Math.floor(Math.random() * 10 + 13)
+    Math.floor(Math.random() * 10 + 6)
   );
   new BotMove(
     $(".bot_block2"),
     $(".Bot_box2"),
-    Math.floor(Math.random() * 10 + 13)
+    Math.floor(Math.random() * 10 + 6)
   );
   new BotMove(
     $(".bot_block3"),
     $(".Bot_box3"),
-    Math.floor(Math.random() * 10 + 13)
+    Math.floor(Math.random() * 10 + 6)
   );
   new BotMove(
     $(".bot_block4"),
     $(".Bot_box4"),
-    Math.floor(Math.random() * 10 + 13)
+    Math.floor(Math.random() * 10 + 6)
   );
   let i = 0;
   if (i == 0) {
